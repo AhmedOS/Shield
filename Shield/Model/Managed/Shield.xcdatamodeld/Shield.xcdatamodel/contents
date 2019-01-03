@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AntivirusScanResult" representedClassName="AntivirusScanResult" syncable="YES" codeGenerationType="class">
+        <attribute name="detected" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="result" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="report" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FileScanReport" inverseName="scans" inverseEntity="FileScanReport" syncable="YES"/>
+    </entity>
+    <entity name="FileScanReport" representedClassName="FileScanReport" syncable="YES" codeGenerationType="class">
+        <attribute name="positives" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sha256" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="scans" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AntivirusScanResult" inverseName="report" inverseEntity="AntivirusScanResult" syncable="YES"/>
+    </entity>
+    <entity name="ScannedFile" representedClassName="ScannedFile" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sha256" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AntivirusScanResult" positionX="-36" positionY="45" width="128" height="105"/>
+        <element name="FileScanReport" positionX="-295.1328125" positionY="173.5234375" width="128" height="105"/>
+        <element name="ScannedFile" positionX="-320.03125" positionY="-10.10546875" width="128" height="90"/>
+    </elements>
+</model>
