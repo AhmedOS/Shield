@@ -14,8 +14,7 @@ This service is provided by VirusTotal API.
 
 ### Data Breach:
 
-Using haveibeenpwned database and API, the user can check if his email account or password has been compromised in a data breach or not. The process of checking for a compromised passwords is very secure and it doesn't send your password or its hash over the air, instead, it uses only the first five characters of its SHA-1 hash for the checking process. How?
-https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange
+Using haveibeenpwned database and API, the user can check if his email account or password has been compromised in a data breach or not. The process of checking for a compromised passwords is very secure and it doesn't send your password or its hash over the air, instead, it uses only the first five characters of its SHA-1 hash for the checking process. [How?](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange)
 
 
 ### Files Encryption:
