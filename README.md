@@ -29,6 +29,8 @@ The SHA256 hash of a password is used as a key for the AES algorithm. Also, 128 
 pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'CryptoSwift'
+```
+
 
 # Disclaimer
 Using this project in your "iOS Developer Nanodegree" will be considered as plagiarism, and it will lead to disqualifying you from the nanodegree.
