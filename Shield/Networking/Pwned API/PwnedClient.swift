@@ -24,7 +24,7 @@ class PwnedClient {
     static func requestAccountBreaches(_ account: String, completionHandler: @escaping ([Breach]?, String?) -> ()) {
         Alamofire.request(EndPoint.account.url(suffix: account)).responseJSON { (response) in
             guard response.error == nil else {
-                completionHandler(nil, response.error?.localizedDescription)
+                completionHandler(nil, "An error has occurred. Please check your internet connection or try again later")
                 return
             }
             let status = response.response?.statusCode
@@ -49,7 +49,7 @@ class PwnedClient {
         sha1.removeFirst(5)
         Alamofire.request(EndPoint.password.url(suffix: hashPrefix)).responseString { (response) in
             guard response.error == nil else {
-                completionHandler(nil, response.error?.localizedDescription)
+                completionHandler(nil, "An error has occurred. Please check your internet connection or try again later")
                 return
             }
             let status = response.response?.statusCode
