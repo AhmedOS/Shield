@@ -18,7 +18,7 @@ Using haveibeenpwned database and API, the user can check if his email account o
 
 
 ### Files Encryption:
-This feature allows a user encrypt a file using a password and decrypt it later using the same password.
+This feature allows a user to encrypt a file using a password and decrypt it later using the same password.
 The SHA256 hash of a password is used as a key for the AES algorithm. Also, 128 of 256 bits from the key are used as an initialization vector for the AES. Encrypted and decrypted files are saved on the user device.
 
 
