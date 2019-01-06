@@ -14,7 +14,7 @@ class VirustotalClient {
     
     private init() { }
     
-    fileprivate static let apiKey = "c370d97832b586527b8431300ae80da9eb534b5472341c84b5ab0ce9b136dc95"
+    fileprivate static let apiKey = "YOUR_API_KEY"
     
     enum EndPoints {
         static let scanFile = URL(string: "https://www.virustotal.com/vtapi/v2/file/scan")!
