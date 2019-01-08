@@ -5,7 +5,8 @@
 - Check if your email, account or password has been compromised in a data breach.
 - Encrypt and decrypt files using a password.
 
-<img src="https://i.imgur.com/iIDp45t.png" width="300">
+| <img src="https://i.imgur.com/iIDp45t.png" width="300"> |
+| ------------------------------------------------------- |
 
 ### Scan File:
 
@@ -29,7 +30,8 @@ Using haveibeenpwned database and API, the user can check if his email account o
 This feature allows a user to encrypt a file using a password and decrypt it later using the same password.
 The SHA256 hash of a password is used as a key for the AES algorithm. Also, 128 of 256 bits from the key are used as an initialization vector for the AES. Encrypted and decrypted files are saved on the user device.
 
-<img src="https://i.imgur.com/LHY6Fz6.png" width="300">
+| <img src="https://i.imgur.com/LHY6Fz6.png" width="300"> |
+| ------------------------------------------------------- |
 
 # Dependencies
 #### CocoaPods:
